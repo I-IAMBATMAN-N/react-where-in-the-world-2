@@ -10,7 +10,14 @@ export default function Form({
     // console.log("region", string);
   }
   function handleInput(string) {
-    setSearchWord(string);
+    //
+    const regExpNum = /[0-9]/;
+
+    if (regExpNum.test(string)) {
+      alert("No numbers in input please");
+    } else if (!regExpNum.test(string)) {
+      setSearchWord(string);
+    }
   }
 
   console.log(Object.keys(country));
