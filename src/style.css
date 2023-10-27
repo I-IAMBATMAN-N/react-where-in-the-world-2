@@ -23,6 +23,8 @@ body {
   background-color: var(--color-light);
 
   position: relative;
+
+  padding-top: 17rem;
 }
 body.mode {
   background-color: #19242b;
@@ -62,9 +64,17 @@ body.mode .country-full {
 
   padding-top: 3.2rem;
 }
+.header,
+.form {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
 .header {
   width: 100%;
   height: auto;
+
+  top: 0;
 
   padding: 2.4rem;
   background-color: #ffff;
@@ -81,6 +91,13 @@ body.mode .country-full {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.form {
+  max-width: 1024px;
+
+  margin: 0 auto;
+
+  top: 10.8rem;
 }
 .input-container {
   display: flex;
