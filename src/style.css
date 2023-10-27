@@ -21,6 +21,8 @@ body {
 
   color: var(--color-dark);
   background-color: var(--color-light);
+
+  position: relative;
 }
 body.mode {
   background-color: #19242b;
