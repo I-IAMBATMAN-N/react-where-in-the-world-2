@@ -7,10 +7,10 @@ export default function Country({ country }) {
   const languages = country.languages ? Object.values(country.languages) : [];
   const neighbours = country.borders;
 
-  console.log(country.languages);
-  console.log(country.borders);
+  // console.log(country.languages);
+  // console.log(country.borders);
 
-  console.log("custom currencies", currencies);
+  // console.log("custom currencies", currencies);
 
   return (
     <section className="country-section">

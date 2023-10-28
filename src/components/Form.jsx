@@ -20,8 +20,8 @@ export default function Form({
     }
   }
 
-  console.log(Object.keys(country));
-  console.log(Object.keys(country) === 0);
+  // console.log(Object.keys(country));
+  // console.log(Object.keys(country) === 0);
   return (
     <form
       className="form"

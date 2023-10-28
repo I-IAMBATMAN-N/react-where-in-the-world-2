@@ -9,7 +9,7 @@ export default function Countries({ data, region, setCountry, searchWord }) {
   };
 
   const keys = Object.keys(countryArrays);
-  console.log("keys", keys);
+  // console.log("keys", keys);
 
   // console.log("asian", asianCountries);
   // console.log("america", americanCountries);
@@ -26,9 +26,9 @@ export default function Countries({ data, region, setCountry, searchWord }) {
   function CountriesItems({ country }) {
     function handleCountry(selectedCountry) {
       setCountry(selectedCountry);
-      console.log(selectedCountry);
+      // console.log(selectedCountry);
     }
-    console.log("countries searchWord", searchWord);
+    //  console.log("countries searchWord", searchWord);
     return (
       <>
         {countryArrays[region]
