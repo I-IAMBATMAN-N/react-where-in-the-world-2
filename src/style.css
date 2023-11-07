@@ -34,16 +34,14 @@ body {
   flex-direction: column;
   gap: 3.2rem;
 
-  color: var(--color-dark);
-  background-color: var(--color-light);
-
   position: relative;
 
-  padding-top: 17rem;
+  padding-top: 20.2rem;
+
+  color: var(--color-dark);
+  background-color: var(--color-light);
 }
-body.mode {
-  background-color: #19242b;
-}
+body.mode,
 body.mode .header,
 body.mode .input-container,
 body.mode .btn--mode,
@@ -62,8 +60,7 @@ body.mode .header,
 body.mode .input-container,
 body.mode .country,
 body.mode .btn--back,
-body.mode .list-item,
-body.mode .country-full {
+body.mode .list-item {
   -webkit-box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.12);
   box-shadow: -1px 1px 5px 0px rgba(255, 255, 255, 0.12);
 }
@@ -82,8 +79,6 @@ body.mode .country-full {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 3.2rem;
-
-  padding-top: 3.2rem;
 }
 .header,
 .form {
@@ -259,7 +254,7 @@ body.mode .country-full {
 #countries {
   text-align: center;
   font-size: 1.2rem;
-  padding: 1.6rem 0;
+  padding: 1.6rem;
 
   background-color: #1f2d3600;
   border: none;
@@ -294,6 +289,8 @@ body.mode .country-full {
   cursor: pointer;
 }
 .btn--mode {
+  height: 100%;
+
   text-decoration: none;
   color: #1f2d36;
 
@@ -419,17 +416,18 @@ body.mode .country-full {
 .btn--back:hover {
   cursor: pointer;
 }
-
 @media (max-width: 55em) {
   .section {
     -ms-grid-columns: (1fr) [3];
     grid-template-columns: repeat(3, 1fr);
+    padding-top: 6.4rem;
   }
 }
 @media (max-width: 48em) {
   .section {
     -ms-grid-columns: (1fr) [2];
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 6.4rem;
   }
   .form {
     -webkit-box-orient: vertical;
@@ -471,5 +469,6 @@ body.mode .country-full {
     grid-template-columns: 1fr;
     padding: 0 6.4rem;
     padding-bottom: 6.4rem;
+    padding-top: 6.4rem;
   }
 }
